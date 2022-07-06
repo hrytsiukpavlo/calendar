@@ -1,0 +1,25 @@
+.day-cell {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.2rem;
+
+    div {
+        font-size: 1.4rem;
+        margin: 0.3rem;
+        width: calc(40.2rem/7);
+        height: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+        border-radius: 25%;
+        transition: background-color 0.2s;
+
+        &:hover:not(.today) {
+            background-color: #3399FF;
+            border-radius: 25%;
+            cursor: pointer;
+        }
+    }
+}
